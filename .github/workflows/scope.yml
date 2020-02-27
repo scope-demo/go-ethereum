@@ -2,7 +2,6 @@ name: Scope
 on: [push, pull_request]
 jobs:
 
-
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -24,6 +23,8 @@ jobs:
       uses: undefinedlabs/scope-for-go-action@v1
       with:
         dsn: ${{secrets.SCOPE_DSN}}
+      env:
+        SCOPE_TESTING_FAIL_RETRIES: 3
 
     - name: Upload Scope logs
       if: always()
