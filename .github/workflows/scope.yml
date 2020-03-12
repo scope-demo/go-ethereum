@@ -27,6 +27,7 @@ jobs:
         version: goroutines-panic-handler
       env:
         SCOPE_TESTING_FAIL_RETRIES: 3
+        SCOPE_DEBUG: true
 
 
     - name: Upload Scope logs
