@@ -19,13 +19,11 @@ jobs:
     - name: Get dependencies
       run: go get -v -t -d ./...
       
-    - name: Set agent version
-      run: go get go.undefinedlabs.com/scopeagent@goroutines-panic-handler
-
     - name: Scope for Go
-      uses: undefinedlabs/scope-for-go-action@v1
+      uses: undefinedlabs/scope-for-go-action@custom
       with:
         dsn: ${{secrets.SCOPE_DSN}}
+        version: goroutines-panic-handler
       env:
         SCOPE_TESTING_FAIL_RETRIES: 3
 
