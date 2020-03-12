@@ -18,6 +18,9 @@ jobs:
 
     - name: Get dependencies
       run: go get -v -t -d ./...
+      
+    - name: Set agent version
+      run: go get go.undefinedlabs.com/scopeagent@goroutines-panic-handler
 
     - name: Scope for Go
       uses: undefinedlabs/scope-for-go-action@v1
