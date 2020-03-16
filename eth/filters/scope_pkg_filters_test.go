@@ -1,0 +1,5 @@
+package filters
+
+import (
+	_ "go.undefinedlabs.com/scopeagent/autoinstrument"
+)

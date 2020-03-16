@@ -1,0 +1,5 @@
+package console
+
+import (
+	_ "go.undefinedlabs.com/scopeagent/autoinstrument"
+)

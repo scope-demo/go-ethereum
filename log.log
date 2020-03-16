@@ -1,0 +1,317 @@
+?   	github.com/ethereum/go-ethereum	[no test files]
+=== RUN   TestTextHash
+--- PASS: TestTextHash (0.00s)
+=== RUN   TestHDPathParsing
+--- PASS: TestHDPathParsing (0.00s)
+=== RUN   TestURLParsing
+--- PASS: TestURLParsing (0.00s)
+=== RUN   TestURLString
+--- PASS: TestURLString (0.00s)
+=== RUN   TestURLMarshalJSON
+--- PASS: TestURLMarshalJSON (0.00s)
+=== RUN   TestURLUnmarshalJSON
+--- PASS: TestURLUnmarshalJSON (0.00s)
+=== RUN   TestURLComparison
+--- PASS: TestURLComparison (0.00s)
+PASS
+ok  	github.com/ethereum/go-ethereum/accounts	(cached)
+=== RUN   TestReader
+--- PASS: TestReader (0.00s)
+=== RUN   TestTestNumbers
+--- PASS: TestTestNumbers (0.00s)
+=== RUN   TestTestString
+--- PASS: TestTestString (0.00s)
+=== RUN   TestTestBool
+--- PASS: TestTestBool (0.00s)
+=== RUN   TestTestSlice
+--- PASS: TestTestSlice (0.00s)
+=== RUN   TestMethodSignature
+--- PASS: TestMethodSignature (0.00s)
+=== RUN   TestOverloadedMethodSignature
+--- PASS: TestOverloadedMethodSignature (0.00s)
+=== RUN   TestMultiPack
+--- PASS: TestMultiPack (0.00s)
+=== RUN   TestInputVariableInputLength
+--- PASS: TestInputVariableInputLength (0.00s)
+=== RUN   TestInputFixedArrayAndVariableInputLength
+--- PASS: TestInputFixedArrayAndVariableInputLength (0.00s)
+=== RUN   TestDefaultFunctionParsing
+--- PASS: TestDefaultFunctionParsing (0.00s)
+=== RUN   TestBareEvents
+--- PASS: TestBareEvents (0.00s)
+=== RUN   TestUnpackEvent
+--- PASS: TestUnpackEvent (0.00s)
+=== RUN   TestUnpackEventIntoMap
+--- PASS: TestUnpackEventIntoMap (0.00s)
+=== RUN   TestUnpackMethodIntoMap
+--- PASS: TestUnpackMethodIntoMap (0.00s)
+=== RUN   TestUnpackIntoMapNamingConflict
+--- PASS: TestUnpackIntoMapNamingConflict (0.00s)
+=== RUN   TestABI_MethodById
+--- PASS: TestABI_MethodById (0.00s)
+=== RUN   TestABI_EventById
+--- PASS: TestABI_EventById (0.00s)
+=== RUN   TestDuplicateMethodNames
+--- PASS: TestDuplicateMethodNames (0.00s)
+=== RUN   TestDoubleDuplicateMethodNames
+--- PASS: TestDoubleDuplicateMethodNames (0.00s)
+=== RUN   TestEventId
+--- PASS: TestEventId (0.00s)
+=== RUN   TestEventString
+--- PASS: TestEventString (0.00s)
+=== RUN   TestEventMultiValueWithArrayUnpack
+--- PASS: TestEventMultiValueWithArrayUnpack (0.00s)
+=== RUN   TestEventTupleUnpack
+=== RUN   TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_structure
+=== RUN   TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_slice
+=== RUN   TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_structure_with_abi:_tag
+=== RUN   TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_duplicated_abi_tag
+=== RUN   TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_a_field_and_a_tag_mapping_to_the_same_abi_variable
+=== RUN   TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_an_empty_tag
+=== RUN   TestEventTupleUnpack/Can_unpack_Pledge_event_into_structure
+=== RUN   TestEventTupleUnpack/Can_unpack_Pledge_event_into_slice
+=== RUN   TestEventTupleUnpack/Can_unpack_Pledge_event_into_an_array
+=== RUN   TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_slice_with_wrong_types
+=== RUN   TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_struct_with_wrong_filed_types
+=== RUN   TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_too_short_slice
+=== RUN   TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_map
+=== RUN   TestEventTupleUnpack/Can_unpack_abi_variables_with_mixed_case
+--- PASS: TestEventTupleUnpack (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_structure (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_slice (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_ERC20_Transfer_event_into_structure_with_abi:_tag (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_duplicated_abi_tag (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_a_field_and_a_tag_mapping_to_the_same_abi_variable (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_ERC20_Transfer_event_with_an_empty_tag (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_Pledge_event_into_structure (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_Pledge_event_into_slice (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_Pledge_event_into_an_array (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_slice_with_wrong_types (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_struct_with_wrong_filed_types (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_too_short_slice (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_not_unpack_Pledge_event_into_map (0.00s)
+    --- PASS: TestEventTupleUnpack/Can_unpack_abi_variables_with_mixed_case (0.00s)
+=== RUN   TestEventUnpackIndexed
+--- PASS: TestEventUnpackIndexed (0.00s)
+=== RUN   TestEventIndexedWithArrayUnpack
+--- PASS: TestEventIndexedWithArrayUnpack (0.00s)
+=== RUN   TestMethodString
+--- PASS: TestMethodString (0.00s)
+=== RUN   TestMethodSig
+--- PASS: TestMethodSig (0.00s)
+=== RUN   TestNumberTypes
+--- PASS: TestNumberTypes (0.00s)
+=== RUN   TestPack
+--- PASS: TestPack (0.00s)
+=== RUN   TestMethodPack
+--- PASS: TestMethodPack (0.00s)
+=== RUN   TestPackNumber
+--- PASS: TestPackNumber (0.00s)
+=== RUN   TestReflectNameToStruct
+=== RUN   TestReflectNameToStruct/OneToOneCorrespondance
+=== RUN   TestReflectNameToStruct/MissingFieldsInStruct
+=== RUN   TestReflectNameToStruct/MoreFieldsInStructThanArgs
+=== RUN   TestReflectNameToStruct/MissingFieldInArgs
+=== RUN   TestReflectNameToStruct/NoAbiDescriptor
+=== RUN   TestReflectNameToStruct/NoArgs
+=== RUN   TestReflectNameToStruct/DifferentName
+=== RUN   TestReflectNameToStruct/DifferentName#01
+=== RUN   TestReflectNameToStruct/MultipleFields
+=== RUN   TestReflectNameToStruct/MultipleFieldsABIMissing
+=== RUN   TestReflectNameToStruct/NameConflict
+=== RUN   TestReflectNameToStruct/Underscored
+=== RUN   TestReflectNameToStruct/DoubleMapping
+=== RUN   TestReflectNameToStruct/AlreadyMapped
+--- PASS: TestReflectNameToStruct (0.00s)
+    --- PASS: TestReflectNameToStruct/OneToOneCorrespondance (0.00s)
+    --- PASS: TestReflectNameToStruct/MissingFieldsInStruct (0.00s)
+    --- PASS: TestReflectNameToStruct/MoreFieldsInStructThanArgs (0.00s)
+    --- PASS: TestReflectNameToStruct/MissingFieldInArgs (0.00s)
+    --- PASS: TestReflectNameToStruct/NoAbiDescriptor (0.00s)
+    --- PASS: TestReflectNameToStruct/NoArgs (0.00s)
+    --- PASS: TestReflectNameToStruct/DifferentName (0.00s)
+    --- PASS: TestReflectNameToStruct/DifferentName#01 (0.00s)
+    --- PASS: TestReflectNameToStruct/MultipleFields (0.00s)
+    --- PASS: TestReflectNameToStruct/MultipleFieldsABIMissing (0.00s)
+    --- PASS: TestReflectNameToStruct/NameConflict (0.00s)
+    --- PASS: TestReflectNameToStruct/Underscored (0.00s)
+    --- PASS: TestReflectNameToStruct/DoubleMapping (0.00s)
+    --- PASS: TestReflectNameToStruct/AlreadyMapped (0.00s)
+=== RUN   TestTypeRegexp
+--- PASS: TestTypeRegexp (0.00s)
+=== RUN   TestTypeCheck
+--- PASS: TestTypeCheck (0.00s)
+=== RUN   TestUnpack
+=== RUN   TestUnpack/0
+=== RUN   TestUnpack/1
+=== RUN   TestUnpack/2
+=== RUN   TestUnpack/3
+=== RUN   TestUnpack/4
+=== RUN   TestUnpack/5
+=== RUN   TestUnpack/6
+=== RUN   TestUnpack/7
+=== RUN   TestUnpack/8
+=== RUN   TestUnpack/9
+=== RUN   TestUnpack/10
+=== RUN   TestUnpack/11
+=== RUN   TestUnpack/12
+=== RUN   TestUnpack/13
+=== RUN   TestUnpack/14
+=== RUN   TestUnpack/15
+=== RUN   TestUnpack/16
+=== RUN   TestUnpack/17
+=== RUN   TestUnpack/18
+=== RUN   TestUnpack/19
+=== RUN   TestUnpack/20
+=== RUN   TestUnpack/21
+=== RUN   TestUnpack/22
+=== RUN   TestUnpack/23
+=== RUN   TestUnpack/24
+=== RUN   TestUnpack/25
+=== RUN   TestUnpack/26
+=== RUN   TestUnpack/27
+=== RUN   TestUnpack/28
+=== RUN   TestUnpack/29
+=== RUN   TestUnpack/30
+=== RUN   TestUnpack/31
+=== RUN   TestUnpack/32
+=== RUN   TestUnpack/33
+=== RUN   TestUnpack/34
+=== RUN   TestUnpack/35
+=== RUN   TestUnpack/36
+=== RUN   TestUnpack/37
+=== RUN   TestUnpack/38
+=== RUN   TestUnpack/39
+=== RUN   TestUnpack/40
+=== RUN   TestUnpack/41
+=== RUN   TestUnpack/42
+=== RUN   TestUnpack/43
+=== RUN   TestUnpack/44
+=== RUN   TestUnpack/45
+=== RUN   TestUnpack/46
+=== RUN   TestUnpack/47
+=== RUN   TestUnpack/48
+=== RUN   TestUnpack/49
+=== RUN   TestUnpack/50
+=== RUN   TestUnpack/51
+=== RUN   TestUnpack/52
+=== RUN   TestUnpack/53
+=== RUN   TestUnpack/54
+=== RUN   TestUnpack/55
+=== RUN   TestUnpack/56
+=== RUN   TestUnpack/57
+=== RUN   TestUnpack/58
+=== RUN   TestUnpack/59
+=== RUN   TestUnpack/60
+=== RUN   TestUnpack/61
+=== RUN   TestUnpack/62
+=== RUN   TestUnpack/63
+=== RUN   TestUnpack/64
+=== RUN   TestUnpack/65
+=== RUN   TestUnpack/66
+--- PASS: TestUnpack (0.01s)
+    --- PASS: TestUnpack/0 (0.00s)
+    --- PASS: TestUnpack/1 (0.00s)
+    --- PASS: TestUnpack/2 (0.00s)
+    --- PASS: TestUnpack/3 (0.00s)
+    --- PASS: TestUnpack/4 (0.00s)
+    --- PASS: TestUnpack/5 (0.00s)
+    --- PASS: TestUnpack/6 (0.00s)
+    --- PASS: TestUnpack/7 (0.00s)
+    --- PASS: TestUnpack/8 (0.00s)
+    --- PASS: TestUnpack/9 (0.00s)
+    --- PASS: TestUnpack/10 (0.00s)
+    --- PASS: TestUnpack/11 (0.00s)
+    --- PASS: TestUnpack/12 (0.00s)
+    --- PASS: TestUnpack/13 (0.00s)
+    --- PASS: TestUnpack/14 (0.00s)
+    --- PASS: TestUnpack/15 (0.00s)
+    --- PASS: TestUnpack/16 (0.00s)
+    --- PASS: TestUnpack/17 (0.00s)
+    --- PASS: TestUnpack/18 (0.00s)
+    --- PASS: TestUnpack/19 (0.00s)
+    --- PASS: TestUnpack/20 (0.00s)
+    --- PASS: TestUnpack/21 (0.00s)
+    --- PASS: TestUnpack/22 (0.00s)
+    --- PASS: TestUnpack/23 (0.00s)
+    --- PASS: TestUnpack/24 (0.00s)
+    --- PASS: TestUnpack/25 (0.00s)
+    --- PASS: TestUnpack/26 (0.00s)
+    --- PASS: TestUnpack/27 (0.00s)
+    --- PASS: TestUnpack/28 (0.00s)
+    --- PASS: TestUnpack/29 (0.00s)
+    --- PASS: TestUnpack/30 (0.00s)
+    --- PASS: TestUnpack/31 (0.00s)
+    --- PASS: TestUnpack/32 (0.00s)
+    --- PASS: TestUnpack/33 (0.00s)
+    --- PASS: TestUnpack/34 (0.00s)
+    --- PASS: TestUnpack/35 (0.00s)
+    --- PASS: TestUnpack/36 (0.00s)
+    --- PASS: TestUnpack/37 (0.00s)
+    --- PASS: TestUnpack/38 (0.00s)
+    --- PASS: TestUnpack/39 (0.00s)
+    --- PASS: TestUnpack/40 (0.00s)
+    --- PASS: TestUnpack/41 (0.00s)
+    --- PASS: TestUnpack/42 (0.00s)
+    --- PASS: TestUnpack/43 (0.00s)
+    --- PASS: TestUnpack/44 (0.00s)
+    --- PASS: TestUnpack/45 (0.00s)
+    --- PASS: TestUnpack/46 (0.00s)
+    --- PASS: TestUnpack/47 (0.00s)
+    --- PASS: TestUnpack/48 (0.00s)
+    --- PASS: TestUnpack/49 (0.00s)
+    --- PASS: TestUnpack/50 (0.00s)
+    --- PASS: TestUnpack/51 (0.00s)
+    --- PASS: TestUnpack/52 (0.00s)
+    --- PASS: TestUnpack/53 (0.00s)
+    --- PASS: TestUnpack/54 (0.00s)
+    --- PASS: TestUnpack/55 (0.00s)
+    --- PASS: TestUnpack/56 (0.00s)
+    --- PASS: TestUnpack/57 (0.00s)
+    --- PASS: TestUnpack/58 (0.00s)
+    --- PASS: TestUnpack/59 (0.00s)
+    --- PASS: TestUnpack/60 (0.00s)
+    --- PASS: TestUnpack/61 (0.00s)
+    --- PASS: TestUnpack/62 (0.00s)
+    --- PASS: TestUnpack/63 (0.00s)
+    --- PASS: TestUnpack/64 (0.00s)
+    --- PASS: TestUnpack/65 (0.00s)
+    --- PASS: TestUnpack/66 (0.00s)
+=== RUN   TestUnpackSetDynamicArrayOutput
+--- PASS: TestUnpackSetDynamicArrayOutput (0.00s)
+=== RUN   TestMethodMultiReturn
+=== RUN   TestMethodMultiReturn/Can_unpack_into_structure
+=== RUN   TestMethodMultiReturn/Can_unpack_into_reversed_structure
+=== RUN   TestMethodMultiReturn/Can_unpack_into_a_slice
+=== RUN   TestMethodMultiReturn/Can_unpack_into_an_array
+=== RUN   TestMethodMultiReturn/Can_unpack_into_interface_array
+=== RUN   TestMethodMultiReturn/Can_unpack_into_interface_slice
+=== RUN   TestMethodMultiReturn/Can_not_unpack_into_a_slice_with_wrong_types
+=== RUN   TestMethodMultiReturn/Can_not_unpack_into_a_slice_with_wrong_types#01
+--- PASS: TestMethodMultiReturn (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_structure (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_reversed_structure (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_a_slice (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_an_array (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_interface_array (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_unpack_into_interface_slice (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_not_unpack_into_a_slice_with_wrong_types (0.00s)
+    --- PASS: TestMethodMultiReturn/Can_not_unpack_into_a_slice_with_wrong_types#01 (0.00s)
+=== RUN   TestMultiReturnWithArray
+--- PASS: TestMultiReturnWithArray (0.00s)
+=== RUN   TestMultiReturnWithStringArray
+--- PASS: TestMultiReturnWithStringArray (0.00s)
+=== RUN   TestMultiReturnWithStringSlice
+--- PASS: TestMultiReturnWithStringSlice (0.00s)
+=== RUN   TestMultiReturnWithDeeplyNestedArray
+--- PASS: TestMultiReturnWithDeeplyNestedArray (0.00s)
+=== RUN   TestUnmarshal
+--- PASS: TestUnmarshal (0.00s)
+=== RUN   TestUnpackTuple
+--- PASS: TestUnpackTuple (0.00s)
+=== RUN   TestOOMMaliciousInput
+--- PASS: TestOOMMaliciousInput (0.00s)
+=== RUN   ExampleJSON
+--- PASS: ExampleJSON (0.00s)
+PASS
+ok  	github.com/ethereum/go-ethereum/accounts/abi	(cached)
