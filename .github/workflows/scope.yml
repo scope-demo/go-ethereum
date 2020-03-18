@@ -19,7 +19,6 @@ jobs:
     - name: Get dependencies
       run: go get -v -t -d ./...
         
-        
     - name: Scope for Go
       uses: undefinedlabs/scope-for-go-action@v2
       with:
@@ -29,7 +28,6 @@ jobs:
       env:
         SCOPE_TESTING_FAIL_RETRIES: 3
         SCOPE_DEBUG: true
-
 
     - name: Upload Scope logs
       if: always()
