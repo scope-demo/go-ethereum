@@ -91,7 +91,7 @@ func odrAccounts(ctx context.Context, db ethdb.Database, config *params.ChainCon
 	for _, addr := range acc {
 		if bc != nil {
 			header := bc.GetHeaderByHash(bhash)
-			st, err = state.New(header.Root, state.NewDatabase(db))
+			st, err = state.New(header.Root, state.NewDatabase(db), nil)
 		} else {
 			header := lc.GetHeaderByHash(bhash)
 			st = light.NewState(ctx, header, lc.Odr())
@@ -122,7 +122,7 @@ func odrContractCall(ctx context.Context, db ethdb.Database, config *params.Chai
 		data[35] = byte(i)
 		if bc != nil {
 			header := bc.GetHeaderByHash(bhash)
-			statedb, err := state.New(header.Root, state.NewDatabase(db))
+			statedb, err := state.New(header.Root, state.NewDatabase(db), nil)
 
 			if err == nil {
 				from := statedb.GetOrNewStateObject(bankAddr)
@@ -185,8 +185,6 @@ func testOdr(t *testing.T, protocol int, expFail uint64, checkCached bool, fn od
 	// Assemble the test environment
 	server, client, tearDown := newClientServerEnv(t, 4, protocol, nil, nil, 0, false, true)
 	defer tearDown()
-
-	client.handler.synchronise(client.peer.speer)
 
 	// Ensure the client has synced all necessary data.
 	clientHead := client.handler.backend.blockchain.CurrentHeader()
