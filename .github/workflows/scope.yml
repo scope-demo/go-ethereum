@@ -29,6 +29,7 @@ jobs:
         SCOPE_TESTING_FAIL_RETRIES: 3
         SCOPE_DEBUG: true
 
+
     - name: Upload Scope logs
       if: always()
       uses: actions/upload-artifact@v1
