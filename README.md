@@ -1,4 +1,4 @@
-## Go Ethereum
+## Go Ethereum Scope Demo
 
 Official Golang implementation of the Ethereum protocol.
 
